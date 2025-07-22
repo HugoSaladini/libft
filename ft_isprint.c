@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hda-silv <hda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/22 15:51:07 by hda-silv          #+#    #+#             */
-/*   Updated: 2025/07/22 18:53:10 by hda-silv         ###   ########.fr       */
+/*   Created: 2025/07/22 18:51:07 by hda-silv          #+#    #+#             */
+/*   Updated: 2025/07/22 18:52:44 by hda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isprint(int c);
-
-#endif
+int	ft_isprint(int c)
+{
+	if (c <= 00 && c <= 31)
+		return (0);
+	return (1);
+}
