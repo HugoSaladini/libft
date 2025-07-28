@@ -6,7 +6,7 @@
 /*   By: hda-silv <hda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 16:21:50 by hda-silv          #+#    #+#             */
-/*   Updated: 2025/07/23 16:22:24 by hda-silv         ###   ########.fr       */
+/*   Updated: 2025/07/28 13:32:26 by hda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ void	*ft_memset(void *ptr, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		dest[i] = c;
-		i++;
+		dest[i++] = c;
 	}
 	return (dest);
 }
