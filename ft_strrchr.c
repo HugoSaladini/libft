@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hss <silva>                                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/29 16:06:35 by hss               #+#    #+#             */
-/*   Updated: 2025/07/29 16:06:35 by hss              ###   ########.fr       */
+/*   Created: 2025/07/29 16:42:54 by hss               #+#    #+#             */
+/*   Updated: 2025/07/29 16:42:54 by hss              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *src, int c)
+char	*ft_strrchr(const char *src, int c)
 {
-	int	i;
+	int		i;
+	char	*p;
 
 	i = 0;
+	p = 0;
 	while (src[i])
 	{
 		if (src[i] == c)
 		{
-			return ((char *)&src[i]);
+			p = &src[i];
 		}
 		i++;
 	}
@@ -27,5 +29,5 @@ char	*ft_strchr(const char *src, int c)
 	{
 		return ((char *)&src[i]);
 	}
-	return (0);
+	return ((char *)p);
 }
