@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hss <silva>                                +#+  +:+       +#+        */
+/*   By: hda-silv <hda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 16:05:37 by hss               #+#    #+#             */
-/*   Updated: 2025/07/30 16:05:37 by hss              ###   ########.fr       */
+/*   Updated: 2025/07/31 12:50:41 by hda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include <stdlib.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -22,7 +23,6 @@ void	*ft_calloc(size_t count, size_t size)
 	ptr = malloc(sum);
 	if (ptr == 0)
 		return (0);
-
 	i = 0;
 	while (i < sum)
 	{

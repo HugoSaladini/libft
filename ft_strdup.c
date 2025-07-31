@@ -3,17 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hss <silva>                                +#+  +:+       +#+        */
+/*   By: hda-silv <hda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 16:14:47 by hss               #+#    #+#             */
-/*   Updated: 2025/07/30 16:14:47 by hss              ###   ########.fr       */
+/*   Updated: 2025/07/31 12:49:37 by hda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 char	*ft_strdup(const char *s1)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 	char	*ptr;
 
 	i = 0;

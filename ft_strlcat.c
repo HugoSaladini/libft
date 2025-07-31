@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hss <silva>                                +#+  +:+       +#+        */
+/*   By: hda-silv <hda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 15:07:38 by hss               #+#    #+#             */
-/*   Updated: 2025/07/30 15:07:38 by hss              ###   ########.fr       */
+/*   Updated: 2025/07/31 12:09:41 by hda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 
 	len_dest = ft_strlen(dest);
 	len_src = ft_strlen(src);
-
 	if (destsize <= len_dest)
 	{
 		return (destsize + len_src);

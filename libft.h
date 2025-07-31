@@ -6,7 +6,7 @@
 /*   By: hda-silv <hda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 15:51:07 by hda-silv          #+#    #+#             */
-/*   Updated: 2025/07/28 17:45:02 by hda-silv         ###   ########.fr       */
+/*   Updated: 2025/07/31 16:40:51 by hda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void	*ft_memchr(const void *src, int c, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 
 char	*ft_strdup(const char *s1);
-char	*ft_strchr(const char *src, int c);
+char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *src, int c);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 

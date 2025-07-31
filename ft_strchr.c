@@ -3,29 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hss <silva>                                +#+  +:+       +#+        */
+/*   By: hda-silv <hda-silv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 16:06:35 by hss               #+#    #+#             */
-/*   Updated: 2025/07/29 16:06:35 by hss              ###   ########.fr       */
+/*   Updated: 2025/07/31 18:51:42 by hda-silv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *src, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
 	i = 0;
-	while (src[i])
+	while (s[i] != '\0')
 	{
-		if (src[i] == c)
-		{
-			return ((char *)&src[i]);
-		}
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
 		i++;
 	}
-	if (c == '\0')
-	{
-		return ((char *)&src[i]);
-	}
+	if ((char)c == '\0')
+		return ((char *)&s[i]);
 	return (0);
 }
